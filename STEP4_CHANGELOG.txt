@@ -1,0 +1,14 @@
+Redgrin Listener — Step 4
+
+- Fixed a serious stun bug: the stun item previously disabled the Listener AI
+  without ever restoring it, which could leave him permanently frozen.
+- Added a timed stun method to RedgrinListenerEntity.
+- The stun now lasts 100 ticks (5 seconds at 20 ticks per second), then the
+  Listener's AI is re-enabled.
+- Updated the item's tooltip and comments so they accurately describe its
+  current behaviour.
+
+Limitations:
+- The item currently activates a stun pulse around the clicked block. It is
+  not yet a persistent placed trap that waits for the Listener to walk over it.
+- This remains source code, not a compiled or in-game-tested JAR.
